@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+body {
+  background-color: rgb(54, 47, 47);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(54, 52, 52);
+  border: 1px double rgb(98, 190, 118);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#first_container,
+#second_container {
+  background-color: rgb(39, 37, 37);
+  width: 30%;
+  height: 80%;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.list {
+  width: 100%;
+  background-color: rgb(150, 148, 148);
+
+  padding: 5px;
+  text-align: center;
+}
+#btn {
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 40px;
+  background: rgb(255, 41, 41);
+  border: 0;
+  color: white;
+  border-radius: 10px;
+}
+#success {
+  position: absolute;
+  bottom: 15vh;
+  padding: 15px 70px;
+  background: rgba(56, 255, 142, 0.637);
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+
+@media only screen and (max-width: 412px) {
+  .main {
+    width: 100vw;
+    height: 80vh;
+  }
+  #first_container,
+  #second_container {
+    width: 80vw;
+    height: 40%;
+  }
+  #btn {
+    position: unset;
+    padding: 15px 70px;
+    font-size: large;
+  }
+}
